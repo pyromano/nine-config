@@ -253,7 +253,7 @@
             bindings = <
                    &kp F11   &kp F10   &kp F1        &kp F2   &kp F3   &kp F4
      &kp C_BRI_DN  &kp F12   &kp F5    &kp F6        &kp F7   &kp F8   &kp F9  &kp C_BRI_UP
-                       &kp C_VOL_DN &kp C_MUTE       &to AL1 &kp C_VOL_UP    
+                       &kp C_VOL_DN &td SPC C_MUTE       &to AL1 &kp C_VOL_UP    
                 >;
         };
     };
