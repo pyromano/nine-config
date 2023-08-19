@@ -120,8 +120,12 @@
             #binding-cells = <2>;
             tapping-term-ms = <300>;
             quick-tap-ms = <250>;
-            flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
+
+            flavor = "balanced";
+            quick-tap-ms = <175>;                // repeat on tap-into-hold
+            global-quick-tap-ms = <150>;         // requires PR #1387
+            hold-trigger-on-release;              // requires PR #1423
             hold-trigger-key-positions = <3 4 5 10 11 12 13 14>; // right hand
         };
         hm_r: homerow_mods_right {
@@ -130,8 +134,12 @@
             #binding-cells = <2>;
             tapping-term-ms = <300>;
             quick-tap-ms = <250>;
-            flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
+
+            flavor = "balanced";
+            quick-tap-ms = <175>;                // repeat on tap-into-hold
+            global-quick-tap-ms = <150>;         // requires PR #1387
+            hold-trigger-on-release;              // requires PR #1423
             hold-trigger-key-positions = <0 1 2 6 7 8 9>; // left hand
         };
         sr: shift_layer {
@@ -140,9 +148,11 @@
             #binding-cells = <2>;
             tapping-term-ms = <300>;
             quick_tap_ms = <0>;
-            flavor = "tap-preferred";
+            flavor = "balanced";
             bindings = <&kp>, <&to>;
-        retro-tap;
+
+             quick_tap_ms = <175>;
+            // retro-tap;
         };
         hl_l: homerow_layers_left {
             compatible = "zmk,behavior-hold-tap";
@@ -152,6 +162,11 @@
             quick-tap-ms = <250>;
             flavor = "tap-preferred";
             bindings = <&mo>, <&kp>;
+
+            flavor = "balanced";
+            quick-tap-ms = <175>;                // repeat on tap-into-hold
+            global-quick-tap-ms = <150>;         // requires PR #1387
+            hold-trigger-on-release;              // requires PR #1423
             hold-trigger-key-positions = <3 4 5 10 11 12 13 14>; // right hand
         };
         hl_r: homerow_layers_right {
@@ -162,6 +177,11 @@
             quick-tap-ms = <250>;
             flavor = "tap-preferred";
             bindings = <&mo>, <&kp>;
+
+            flavor = "balanced";
+            quick-tap-ms = <175>;                // repeat on tap-into-hold
+            global-quick-tap-ms = <150>;         // requires PR #1387
+            hold-trigger-on-release;              // requires PR #1423
             hold-trigger-key-positions = <0 1 2 6 7 8 9>; // left hand
         };
     td: tapdance {
