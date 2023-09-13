@@ -210,9 +210,9 @@
                 alpha1 {
                 label = "Base";
         bindings = <
-            &hm_l LCTL L    &hm_l LALT G    &hm_l LGUI D          &hm_r RGUI H    &hm_r LALT U        &hm_r RCTL O
-            &hl_l NUM I     &hl_l SM2 S     &hl_l SM1 R     &hl_l SYS T                 &hl_r SYS N     &hl_r SM1 E         &hl_r SM2 A     &hl_r NUM C
-                                            &mt LC(LS(LALT)) SPC &key_repeat          &sk LSHIFT	&alpha2macro  
+            &hm_l LCTL G    &hm_l LALT C    &hm_l LGUI D          &hm_r RGUI H    &hm_r LALT U        &hm_r RCTL L
+            &hl_l NUM A     &hl_l SM2 R     &hl_l SM1 S     &hl_l SYS T                 &hl_r SYS N     &hl_r SM1 E         &hl_r SM2 I     &hl_r NUM O
+                                            &mt LC(LS(LALT)) SPC &key_repeat          &sk LSHIFT	&sl AL2  
         >;
         };
                 alpha2 {
