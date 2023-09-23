@@ -219,7 +219,7 @@
                 label = "Al2";
         bindings = <
               &kp V       &kp W               &kp M            &kp F       &kp SQT         &kp Z 
-        &kp Q       &kp J       &kp P               &kp K            &kp B       &td COMMA DOT    &kp X       &kp Y
+        &kp Q       &kp J       &kp K               &kp P            &kp B       &td COMMA DOT    &kp X       &kp Y
                                &kp SPC &trans               &sr LSHIFT AL1 &sl AL2U     
         >;
         };
@@ -279,7 +279,7 @@
 	alpha2cap {
 		bindings = <
 			&kp LS(V)	&kp LS(W)	&kp LS(M) 	 	&kp LS(F)    	&kp LS(SQT)		&kp LS(Z)	
-			&kp LS(Q) 	&kp LS(J) 	&kp LS(P)	&kp LS(K)		&kp LS(B)	&kp COMMA	&kp LS(X)	&kp LS(Y) 
+			&kp LS(Q) 	&kp LS(J) 	&kp LS(K)	&kp LS(P)		&kp LS(B)	&kp COMMA	&kp LS(X)	&kp LS(Y) 
 			 		&trans 		&trans 			&trans	&trans
 		>;
 	};
