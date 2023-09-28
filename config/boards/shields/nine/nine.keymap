@@ -118,7 +118,7 @@
 
             flavor = "balanced";
             quick-tap-ms = <175>;                // repeat on tap-into-hold
-            global-quick-tap-ms = <150>;         // requires PR #1387
+            require-prior-idle-ms = <150>;         // requires PR #1387
             hold-trigger-on-release;              // requires PR #1423
             hold-trigger-key-positions = <3 4 5 10 11 12 13 14>; // right hand
         };
@@ -132,7 +132,7 @@
 
             flavor = "balanced";
             quick-tap-ms = <175>;                // repeat on tap-into-hold
-            global-quick-tap-ms = <150>;         // requires PR #1387
+            require-prior-idle-ms = <150>;         // requires PR #1387
             hold-trigger-on-release;              // requires PR #1423
             hold-trigger-key-positions = <0 1 2 6 7 8 9>; // left hand
         };
@@ -159,7 +159,7 @@
 
             flavor = "balanced";
             quick-tap-ms = <175>;                // repeat on tap-into-hold
-            global-quick-tap-ms = <150>;         // requires PR #1387
+            require-prior-idle-ms = <150>;         // requires PR #1387
             hold-trigger-on-release;              // requires PR #1423
             hold-trigger-key-positions = <3 4 5 10 11 12 13 14>; // right hand
         };
@@ -174,7 +174,7 @@
 
             flavor = "balanced";
             quick-tap-ms = <175>;                // repeat on tap-into-hold
-            global-quick-tap-ms = <150>;         // requires PR #1387
+            require-prior-idle-ms = <150>;         // requires PR #1387
             hold-trigger-on-release;              // requires PR #1423
             hold-trigger-key-positions = <0 1 2 6 7 8 9>; // left hand
         };
@@ -210,7 +210,7 @@
         alpha1 {
         label = "Base";
         bindings = <
-                          &hm_l LCTL G    &hm_l LALT C    &hm_l LGUI D              &hm_r RGUI H    &hm_r LALT U    &hm_r RCTL L
+                          &hm_l LCTL C    &hm_l LGUI G    &hm_l LALT D              &hm_r LALT L    &hm_r RGUI U    &hm_r RCTL H
             &hl_l NUM A   &hl_l SM2 R     &hl_l SM1 S     &hl_l SYS T               &hl_r SYS N     &hl_r SM1 E     &hl_r SM2 I   &hl_r NUM O
                                           &mt LC(LS(LALT)) SPC &key_repeat          &sk LSHIFT	    &sl AL2  
         >;
@@ -218,8 +218,8 @@
         alpha2 {
         label = "Al2";
         bindings = <
-                    &kp V   &td LG(W) W   &kp M                                  &td LG(F) F   &kp SQT          &kp Z 
-            &td LG(Q) Q     &kp J   &kp K   &kp P                                &kp B         &td COMMA DOT    &kp X   &kp Y
+                    &kp V   &kp W   &kp M                                  &kp F   &kp SQT          &kp Z 
+            &kp Q   &kp J   &kp K   &kp P                                  &kp B   &td COMMA DOT    &kp X   &kp Y
                                     &kp SPC &trans                               &sr LSHIFT AL1  &sl AL2U     
         >;
         };
@@ -256,7 +256,7 @@
         bindings = <
                                 &kp ESC        &kp LG(LS(LBKT))    &kp LG(LS(RBKT))      &td LG(V) LG(C)      &td PG_UP UP    &kp BKSP
             &td LG(GRAVE) TAB   &kp DEL        &td HOME LG(LBKT)   &td END LG(RBKT)      &kp  LEFT            &td PG_DN DOWN  &td  LG(LS(N5)) RIGHT   &kp RET
-                                               &kp LCTL &kp RALT                                              &sr LSHIFT AL1 &kp RGUI           
+                                               &kp LCTL &kp LALT                                              &sr LSHIFT AL1 &kp RGUI           
         >;
         };
 
