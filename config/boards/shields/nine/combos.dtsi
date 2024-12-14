@@ -1,0 +1,61 @@
+/*                KEY POSITIONS
+
+  ╭─────────────╮      	        ╭─────────────╮
+  │    0  1  2  │               │ 3  4  5     │
+  │ 6  7  8  9  ╰────╮    ╭─────╯ 10 11 12 13 │
+  ╰─────────╮  14 15 │    │ 16 17  ╭──────────╯
+            ╰────────╯    ╰────────╯ */
+
+#define COMBO_TERM_FAST 20
+#define COMBO_TERM_SLOW 40
+
+#define COMBO_IDLE_FAST 150
+#define COMBO_IDLE_SLOW 50
+
+/* Layers combo */
+ZMK_COMBO(caps, &caps_word, 1 4, APT, COMBO_TERM_SLOW, COMBO_IDLE_SLOW)
+ZMK_COMBO(capslock, &kp CAPSLOCK, 0 5, APT, COMBO_TERM_SLOW, COMBO_IDLE_SLOW)
+//ZMK_COMBO(mouse, &smart_mouse, 2 3, APT, COMBO_TERM_SLOW, COMBO_IDLE_SLOW)
+
+
+/* Horizontal combos - left hand */
+ZMK_COMBO(w, &kp W, 6 0, APT, COMBO_TERM_FAST, COMBO_IDLE_FAST)
+ZMK_COMBO(m, &kp M, 0 1, APT, COMBO_TERM_FAST, COMBO_IDLE_FAST)
+ZMK_COMBO(b, &kp B, 1 2, APT, COMBO_TERM_FAST, COMBO_IDLE_FAST)
+ZMK_COMBO(f, &kp F, 7 8, APT, COMBO_TERM_FAST, COMBO_IDLE_FAST)
+ZMK_COMBO(p, &kp P, 8 9, APT, COMBO_TERM_FAST, COMBO_IDLE_FAST)
+ZMK_COMBO(q, &kp Q, 7 9, APT, COMBO_TERM_FAST, COMBO_IDLE_FAST)
+
+ZMK_COMBO(esc, &kp ESC, 0 2, APT, COMBO_TERM_SLOW, COMBO_IDLE_SLOW)
+
+/* Diagonal combos - left hand */
+ZMK_COMBO(minus, &kp MINUS, 0 8, APT, COMBO_TERM_FAST, COMBO_IDLE_FAST)
+ZMK_COMBO(k, &kp K, 1 9, APT, COMBO_TERM_FAST, COMBO_IDLE_FAST)
+ZMK_COMBO(lt, &kp LT, 0 9, APT, COMBO_TERM_FAST, COMBO_IDLE_FAST)
+
+/* Vertical combos - left hand */
+ZMK_COMBO(lbrc, &kp LBRC, 0 7, APT, COMBO_TERM_FAST, COMBO_IDLE_FAST)
+ZMK_COMBO(lbkt, &kp LBKT, 1 8, APT, COMBO_TERM_FAST, COMBO_IDLE_FAST)
+ZMK_COMBO(lpar, &kp LPAR, 2 9, APT, COMBO_TERM_FAST, COMBO_IDLE_FAST)
+
+/* Horizontal combos - right hand */
+ZMK_COMBO(v, &kp V, 3 4, APT, COMBO_TERM_FAST, COMBO_IDLE_FAST)
+ZMK_COMBO(w, &kp W, 4 5, APT, COMBO_TERM_FAST, COMBO_IDLE_FAST)
+ZMK_COMBO(x, &kp X, 10 11, APT, COMBO_TERM_FAST, COMBO_IDLE_FAST)
+ZMK_COMBO(z, &kp Z, 11 12, APT, COMBO_TERM_FAST, COMBO_IDLE_FAST)
+
+ZMK_COMBO(bspc, &bspc_morph, 3 5, APT, COMBO_TERM_SLOW, COMBO_IDLE_SLOW)
+ZMK_COMBO(ret, &kp RET, 10 12, APT, COMBO_TERM_SLOW, COMBO_IDLE_SLOW)
+
+/* Vertical combos - right hand */
+ZMK_COMBO(rpar, &kp RPAR, 3 10, APT, COMBO_TERM_FAST, COMBO_IDLE_FAST)
+ZMK_COMBO(rbkt, &kp RBKT, 4 11, APT, COMBO_TERM_FAST, COMBO_IDLE_FAST)
+ZMK_COMBO(rbrc, &kp RBRC, 5 12, APT, COMBO_TERM_FAST, COMBO_IDLE_FAST)
+
+ZMK_COMBO(comma, &comma_morph, 11 17, APT, COMBO_TERM_FAST, COMBO_IDLE_FAST)
+ZMK_COMBO(dot, &dot_morph, 12 17, APT, COMBO_TERM_FAST, COMBO_IDLE_FAST)
+
+/* Diagonal combos - right hand */
+ZMK_COMBO(j, &kp J, 4 10, APT, COMBO_TERM_FAST, COMBO_IDLE_FAST)
+ZMK_COMBO(slash, &kp SLASH, 5 11, APT, COMBO_TERM_FAST, COMBO_IDLE_FAST)
+ZMK_COMBO(gt, &kp GT, 5 10, APT, COMBO_TERM_FAST, COMBO_IDLE_FAST)
