@@ -1,4 +1,6 @@
 manifest:
+  defaults:
+    remote: urob
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
@@ -12,5 +14,8 @@ manifest:
     - name: zmk-helpers
       remote: urob
       revision: main
+    - name: zmk-tri-state
+      revision: main
+      path: modules/tri-state
   self:
     path: config
